@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+	<title>DirectOTP-What is OTP</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<style type="text/css">
+
+		a:link     { color:#666; text-decoration:none; }
+		a:visited  { color:#666; text-decoration:none; }
+		a:active,a:hover { color:#bd5a35; text-decoration:none; }
+
+
+		body {font-family:'Malgun Gothic','Noto Sans KR',sans-serif; font-size: 14px; line-height: 24px; }
+		div {font-family:'Malgun Gothic','Noto Sans KR',sans-serif; font-size: 14px; line-height: 24px; }
+		table {font-family:'Malgun Gothic','Noto Sans KR',sans-serif; font-size: 14px; line-height: 24px; }
+		p {font-family:'Malgun Gothic','Noto Sans KR',sans-serif; font-size: 16px; line-height: 24px; }
+
+	</style>
+</head>
+
+<body topmargin=0 leftmargin=0 rightmargin=0>
+
+<script src="DOTPheader.js"></script>
+
+	<!-- Main 사진이미지-->
+	<div style="width:100%; height:361px; margin:0px; background:#e0e0e0;">
+		<center><img src="image/DOTP-MainImage-WhatIsOTP.png" border=0></center>
+	</div>
+
+
+	<!-- OTP란 -->
+	<div style="width:100%; margin:0px; background:#ffffff;">
+		<center>
+
+		<table width=1024 height=100; border=0><tr><td align="center" valign="center">
+			<br><br><img src="image/WhatIsOTP.png" border=0>
+		</td></tr></table>
+
+		<table width=1024 height=100 border=0><tr><td width=150>&nbsp;</td><td valign="center">
+		패스워드만을 통한 인증은 해킹에 취약하여 위험하며 인증 수단으로는 부족한 솔루션이 될 수 밖에 없습니다.<br>
+		보안 관련 범죄가 증가하고 범죄 수법도 고도화되고 있어서 인증 강화를 위한 확실한 보안대책이 필요합니다.<br>
+		패스워드 인증의 보안 취약성을 해결하기 위하여 <b>OTP (One Time Password)는 가장 강력한 본인인증 수단</b>입니다.<br>
+		</td></tr></table>
+
+		<table width=1024 height=240; border=0><tr><td align="center" valign="center">
+			<img src="image/OTP-Process.png" border=0>
+		</td></tr></table>
+
+		<table width=1024 height=125 border=0><tr><td width=150>&nbsp;</td><td valign="center">
+		OTP는 On-Line 상에서 사용자가 고정된 패스워드 대신 본인 확인을 위하여 사용하는 일회용 비밀번호로서<br>
+		토큰이나 카드등 개인이 소지한 OTP 장치에서 발생한 값과 인증 서버에서 발생한 값을 비교하여 인증하게 되며<br>
+		사용자는 본인인증을 받으려 할 때마다 새로운 OTP를 사용하여야 하고 1회에 한해서만 사용이 가능합니다.<br>
+		특성상 OTP번호에 대한 추측이 어려울 뿐만 아니라 한번 사용된 OTP는 재사용할 수 없기 때문에 스파이웨어 등의<br>
+		다양한 해킹을 통하여 OTP를 취득하여도 사용할 수 없게 되어 확실한 안전성을 제공합니다. <br>
+		</td></tr></table>
+
+		<table width=1024 height=150 border=0><tr><td width=150>&nbsp;</td><td valign="center">
+		<b>Two Factor 인증</b><br>
+		안전하고 확실한 인증을 위해 아래의 인증방법 중에서 2가지 인증방법을 채택하여 취약성을 보완합니다.<br>
+		그러나 지문, 홍채, 목소리 등의 개인을 식별하기 위한 바이오-정보를 이용하려면 비용과 정확도 및 사용성에<br>
+		어려움이 있어 OTP나 보안카드 등이 많이 사용되고 있습니다.
+		</td></tr></table>
+
+		<table width=1024 height=240; border=0><tr><td align="center" valign="center">
+			<img src="image/TwoFactor.png" border=0>
+		</td></tr></table>
+		
+		</center>
+	<br><br>
+	</div>
+
+	
+	<!-- OTP 방식-->
+	<div style="width:100%; height:400px; margin:0px; background:#f2f2f2;">
+		<center>
+		<table width=1024 height=400 border=0><tr><td width=150>&nbsp;</td><td valign="center">
+		<b>시간 동기화 방식</b><br>
+		시간동기방식은 OTP 기기와 인증서버의 시간값을 이용하여 OTP 번호를 생성하고 인증요청시 OTP 기기와 인증 서버에서 발생한<br>
+		OTP 번호의 값이 동일한지 비교하여 승인여부를 판단합니다. 시간동기방식은 OTP 번호가 정해진 시간(30초, 1분) 마다 바뀌므로<br>
+		타인에게 OTP 번호가 유출되어도 사용할 수 있는 시간이 짧고 1회성이기 때문에 안전합니다.<br><br>
+		<b>이벤트 동기화 방식</b><br>
+		OTP 기기의 버튼을 누를 때마다 다른 OTP값이 생성되며 한계 유효 시간은 정해져 있지 않습니다.<br>
+		OTP 기기의 이벤트 발생 수치와 인증 서버의 수치를 계속 일치시켜야 합니다.<br><br>
+		<b>질의 (Q&A) 방식</b><br>
+		서버의 질문에 대하여 OTP기기로부터 답변으로 OTP값을 얻어 인증을 요청하는 방식입니다.<br>
+		(은행거래에 사용하는 금융용 보안카드도 일종의 질의응답 방식입니다.)<br>
+		OTP 기기에 질문을 입력하는 버튼이 필요하고 조작을 해야하는 불편함이 있습니다.<br>
+		</td></tr></table>
+		</center>
+	</div>
+	<br>
+
+	<!-- OTP Merit-->
+	<div style="width:100%; height:600px; margin:0px; background:#ffffff;">
+		<center><img src="image/OTPmerit.png" border=0></center>
+	</div>
+
+	<!-- OTP 종류, 장단점 -->
+	<div style="width:100%; margin:0px; background:#ffffff;">
+		<center>
+
+		<table width=1024 height=200 border=0><tr><td width=100></td><td width=200 align="center" valign="center">
+			<img src="image/OTPtoken.png" border=0></td><td width=20></td><td>
+			<img src="image/OTPtokenDesc.png" border=0>
+		</td></tr></table><br>
+		
+		<table width=1024 height=200 border=0><tr><td width=100></td><td width=200 align="center" valign="center">
+			<img src="image/OTPcard.png" border=0></td><td width=20></td><td>
+			<img src="image/OTPcardDesc.png" border=0>
+		</td></tr></table><br>
+		
+		<table width=1024 height=200 border=0><tr><td width=100></td><td width=200 align="center" valign="center">
+			<img src="image/OTPsmart.png" border=0></td><td width=20></td><td>
+			<img src="image/OTPsmartDesc.png" border=0>
+		</td></tr></table>
+
+		</center>
+	<br><br>
+	</div>
+	
+	
+<script src="DOTPfooter.js"></script>
+
+</body>
+</html>
